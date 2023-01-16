@@ -2,6 +2,8 @@
 
 A Fontend Single Page Application is created using Angular, where a person can able search github profile by the entering the name.\
 
+The components will be insde ->angular-app->src->app
+
 **Functionalities**\
 
 In this application many components are used to make application user friendly\
