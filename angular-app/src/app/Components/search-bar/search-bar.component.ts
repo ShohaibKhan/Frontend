@@ -41,7 +41,7 @@ export class SearchBarComponent {
     }
     else{
       this.spinner.show()
-      this.http.post('https://backend-github-name-wovq.onrender.com/getProfile ',data).subscribe((result)=>{
+      this.http.get('https://api.github.com/users/'+data.name).subscribe((result)=>{
         this.json_form = JSON.stringify(result)
         console.log(this.json_form)
         this.prof.img = JSON.parse(this.json_form)["avatar_url"]
@@ -59,8 +59,6 @@ export class SearchBarComponent {
         this.prof.twitter = JSON.parse(this.json_form)["twitter_username"]
         this.prof.display=true
         this.getProfile.emit(this.prof)
-      },error=>{
-        alert("Enter valid user name")
       })
     }
       

@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     console.log("from child")
     console.log(data);
     this.profile = data
-    this.http.post('https://backend-github-name-wovq.onrender.com/getRepo',{"name":this.profile.login}).subscribe((result)=>{
+    this.http.get('https://api.github.com/users/'+this.profile.login+'/repos?per_page=100').subscribe((result)=>{
       this.json_form_repo = <Array<Object>>result
       console.log(this.profile.login)
       console.log("Iam sending this to Backend for repos")
