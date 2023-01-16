@@ -1,0 +1,67 @@
+<div *ngIf="buttonClicked"  class="container py-2" id="profile">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-2 mt-2" id="image">
+          <div class="card-body text-center"
+          >
+            <img [src]="prof.img" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 200px;">
+            <h5 class="my-1">{{prof.login}}</h5>
+            <p class="text-muted mb-1">{{prof.location}}</p>
+            <p class="text-muted mb-1">Followers: {{prof.followers}} | Following: {{prof.following}} | created at: {{prof.created}}<br><a [href]="prof.url" target="_blank">Github Link</a> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4" id="tab">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{prof.name}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Twitter</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{prof.twitter}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Bio</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{prof.bio}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Company</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><a [href]="prof.blog" target="_blank">{{prof.company}}</a></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Public-Repos</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{prof.repos}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,26 @@
+b{
+    font-size: small;
+}
+#id1{
+    overflow: scroll;
+    width: 3rem;
+    height: 1rem;
+    background-color: rgb(140, 225, 240);
+    border-radius: 2rem;
+    color:rgb(34, 31, 31);
+
+}
+.border{
+    background-color: rgb(198, 243, 243);
+    border: 7px solid rgb(17, 1, 1);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    border-width: 5px;
+    background: #ffffff33;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+      
+}
+

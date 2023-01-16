@@ -1,0 +1,40 @@
+.form-outline form-white {
+    box-sizing: border-box;
+
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid rgb(40, 109, 189);
+    border-left: none; 
+    border-radius: 10px;
+    cursor: pointer;
+    width:auto;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+ 
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

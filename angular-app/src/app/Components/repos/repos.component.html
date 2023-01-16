@@ -1,0 +1,17 @@
+<div *ngIf="buttonClicked"  class="class">
+    <h5 class="text-center">Repositories</h5>
+    
+    <div *ngFor = "let repo of repos | paginate:{itemsPerPage:10,currentPage:p}" class="border">
+        <div class="container">
+            <p style="display: inline;"><a [href]="repo.clone_url" target="_blank" style="display: inline;"> <h6 style="display: inline;">{{repo.name}}</h6></a>&nbsp;
+                <span class="gold-star" style="display: inline;color: rgb(245, 209, 8);" >&#9733;  {{repo.stargazers_count}}</span> 
+            </p>
+            <p><b>Description</b>:   {{repo.description}}</p>
+            <p><b>Created at:</b>  {{repo.created_at}}   | <b>Languages</b> : {{repo.language}}</p>
+             <p class="mb-3"> <b>Topics:&nbsp;</b><span class="" *ngFor = "let topic of repo.topics"><span class="border border-primary" id="id1">{{topic}}</span>&nbsp;&nbsp;&nbsp;</span></p>
+        </div>
+    </div>
+    <div class="border border-primary">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+</div>

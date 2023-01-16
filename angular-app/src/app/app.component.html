@@ -1,0 +1,30 @@
+<div class="window">
+<h4 class="text-center mt-3 mb-4">Get Github profile by name </h4>
+<hr>
+</div>
+<app-search-bar (getProfile)="getProfile($event)"></app-search-bar>
+<hr>
+<div  class="container">
+<app-profile [prof]="profile" ></app-profile>
+</div>
+<hr>
+<div class="container">
+<app-repos [repos]="json_form_repo"></app-repos>
+</div>
+<div class="center-spinner">
+    <ngx-spinner class="center-spinner"
+        bdColor = "rgba(51, 51, 51, 0.8)"
+        size = "medium"
+        color = "#fff"
+        type = "circle"
+    >
+    </ngx-spinner>
+</div>
+
+  
+  
+  
+  
+
+
+      

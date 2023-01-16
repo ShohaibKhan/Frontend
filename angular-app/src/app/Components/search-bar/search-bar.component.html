@@ -1,0 +1,6 @@
+<div class="form-outline bg-glass">
+    <form #userPost="ngForm" class="example" (ngSubmit)="onSubmit(userPost.value)">
+      <input type="text"  name = "name" ngModel placeholder="Enter Username to Search" required > 
+      <button (click)="onButtonClick()" type="submit"  class="btn btn-primary" >Search</button>
+    </form>
+</div>
